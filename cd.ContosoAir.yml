@@ -3,13 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- none
-
+trigger: none
 
 resources:
  pipelines:
-  - pipeline: buildContosoAir # identifier for the resource used in pipeline resource variables
+  - pipeline: ljyca.ContosoAir # identifier for the resource used in pipeline resource variables
     source: Student1-48230276.ContosoAir # name of the pipeline that produces the artifact
     trigger:
      branches:
